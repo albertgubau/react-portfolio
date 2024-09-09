@@ -11,7 +11,6 @@ const About = () => {
             About
           </p>
         </div>
-
         <p className="text-xl mt-5">
           I am a Software Engineer graduated from Universitat Pompeu Fabra in
           Barcelona (specialized in Web Development, Audiovisual Systems and
@@ -22,7 +21,6 @@ const About = () => {
           communicate my thoughts and I like connecting with people through my
           life experiences and my creative space.
         </p>
-
         <br />
       </div>
     </div>
