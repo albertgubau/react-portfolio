@@ -4,8 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialLinks = () => {
-  
-    const links = [
+  const links = [
     {
       id: 1,
       child: (
@@ -13,7 +12,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/albert-gubau-vi%C3%B1as-2477ab235/",
+      href: "https://www.linkedin.com/in/albert-gubau/",
       style: "rounded-tr-md",
     },
     {
@@ -32,23 +31,23 @@ const SocialLinks = () => {
           e-mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:agubau11@gmail.com",
     },
-    {
-      id: 4,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: "https://linkedin.com",
-      style: "rounded-br-md",
-    },
+    // ,
+    // {
+    //   id: 4,
+    //   child: (
+    //     <>
+    //       Resume <BsFillPersonLinesFill size={30} />
+    //     </>
+    //   ),
+    //   href: "https://linkedin.com",
+    //   style: "rounded-br-md",
+    // },
   ];
 
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
-      
       <ul>
         {links.map(({ id, child, href, style, download }) => {
           return (
@@ -58,13 +57,13 @@ const SocialLinks = () => {
                 "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-black border-2 border-gray-400" +
                 " " +
                 style
-              }
-            >
+              }>
               <a
                 href={href}
                 className="flex justify-between items-center w-full text-white"
                 // download={download}
-                target="_blank" rel="noreferrer"   //To open a new tab and not recharge the current one
+                target="_blank"
+                rel="noreferrer" //To open a new tab and not recharge the current one
               >
                 {child}
               </a>
